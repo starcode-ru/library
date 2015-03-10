@@ -1,0 +1,4 @@
+author:
+    type: rest
+    prefix: /v1
+    resource: Acme\LibraryBundle\Controller\AuthorController

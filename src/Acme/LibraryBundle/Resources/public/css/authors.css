@@ -1,0 +1,20 @@
+.library-app {
+    padding: 15px;
+}
+
+ .author-container {
+    padding: 0;
+}
+
+.library-app .author-item {
+    border: 1px solid #000000;
+    border-bottom: none;
+    display: block;
+    list-style: none;
+    padding: 5px;
+    width: 500px;
+}
+
+.library-app .author-item:last-child {
+    border-bottom: 1px solid #000000;
+}

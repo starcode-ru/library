@@ -1,0 +1,11 @@
+homepage:
+    path: /
+    defaults: { _controller: LibraryBundle:Default:index }
+    requirements:
+            _method: GET
+
+library_api:
+    type: rest
+    prefix: /api
+    resource: "@LibraryBundle/Resources/config/routing.yml"
+

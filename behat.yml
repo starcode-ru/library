@@ -1,0 +1,16 @@
+default:
+  suites:
+      test_suite:
+          type: symfony_bundle
+          bundle: 'LibraryBundle'
+      default:
+          contexts:
+              - FeatureContext:
+                  session:   '@session'
+
+  extensions:
+      Behat\Symfony2Extension:
+        kernel:
+          env: test
+      Behat\WebApiExtension:
+        base_url: "http://library.local/"
