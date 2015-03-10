@@ -6,6 +6,7 @@ Feature: Test API
 
   Scenario: Add new author to library
     Given I set header "X-Auth-Token" with value "secure_key"
+    Given I set header "Content-Type" with value "application/json"
     When I send a POST request to "app_test.php/api/v1/authors" with body:
       """
       {"author": {"name": "Author", "birthday": "1930-05-15"} }
