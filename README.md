@@ -7,12 +7,19 @@ The Librarian
 ```
 git clone https://github.com/starcode-ru/library.git 
 ```
+```
+cd library
+```
+
+Установить зависимости
+```
+composer update
+```
 
 В **app/config/parameters.yml** указать БД.
 
 
 Применить миграцию
-
 ```
 php app/console doctrine:migrations:migrate
 ```
@@ -31,7 +38,6 @@ php app/console doctrine:fixtures:load
 
 
 Применить миграцию для тестовой БД
-
 ```
 php app/console doctrine:migrations:migrate --env test
 ```
